@@ -11,8 +11,6 @@ describe('azbklawyer.com Link Validation', () => {
     it(`should successfully visit ${path}`, () => {
       cy.visit(path);
       cy.url().should('include', path);
-      // You could add more assertions here, e.g., check for a common element:
-      // cy.contains('Wright Law Offices').should('be.visible');
     });
   });
 });
